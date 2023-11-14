@@ -33,11 +33,6 @@ body {
       "main main"
       "footer footer";
   }
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px 10px;
-  }
 }
 /* .contNostros{
  display: grid;
@@ -149,6 +144,14 @@ li{
 main {
   grid-area: main;
   margin: 10px 100px 40px 100px;
+}
+
+@media (min-width: 501) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 10px;
+  }
 }
 .imagen {
   display: flex;
