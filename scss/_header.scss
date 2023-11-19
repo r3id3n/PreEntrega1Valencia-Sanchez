@@ -1,0 +1,21 @@
+header {
+  position: sticky;
+  top: 0px;
+  grid-area: header;
+
+  .navbar {
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      width: 50px;
+      cursor: pointer;
+    }
+    .navbar-brand {
+      font-size: 30px;
+    }
+    .nav-link {
+      font-size: 20px;
+    }
+  }
+}

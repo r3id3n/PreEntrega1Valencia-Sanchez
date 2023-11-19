@@ -1,0 +1,16 @@
+.hero{
+    height: 500px;
+    background-image: url(../img/hero-page.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .hero-content{
+        background: rgba(0,0,0,0.7);
+        padding: 20px;
+        border-radius: 10px;
+    }
+}

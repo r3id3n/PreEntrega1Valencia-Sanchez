@@ -3,18 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style CSS -->
     <link rel="stylesheet" href="css/Style.css" />
-    <link rel="icon" href="img/logo-empresa.png" type="image/x-icon" />
-    <!-- CDN Bootstrap -->
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Bootstrap Style Layout -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- Logo Page -->
+    <link rel="icon" href="img/logo-empresa.png" type="image/x-icon" />
     <title>GC Domótic</title>
   </head>
   <body class="contIndex">
+        <!-- Hero Page -->
+        <div class="hero">
+          <div class="hero-content">
+            <h1>GC Domótic LTDA</h1>
+            <p>Bienvenidos a mi sitio Web</p>
+          </div>
+        </div>
     <!-- Nav Bar -->
     <header>
       <!-- navbar navbar-expand-lg bg-body-tertiary-->
@@ -51,87 +62,71 @@
         </div>
       </nav>
     </header>
-    <!-- Hero Page -->
-    <div class="hero">
-      <div class="hero-content">
-        <h1>GC Domótic LTDA</h1>
-        <p>Bienvenidos a mi sitio Web</p>
-      </div>
-    </div>
-    <!-- Project content -->
-    <section class="sectionA contenedor">
-      <h3>Nuestros servicios</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        reprehenderit animi nemo nam porro sunt libero qui quaerat, odit ducimus
-        natus temporibus ut officia nesciunt adipisci ipsum? Non, nemo suscipit?
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias illum
-        ullam hic, debitis consectetur tempore adipisci inventore, facilis
-        quisquam rerum magnam dolores placeat dignissimos excepturi
-        necessitatibus. Earum ullam reiciendis fugit. Facilis, numquam
-        consectetur laborum quam vero voluptates, saepe, similique sit odio sed
-        rerum quo in fugiat perferendis ipsam quae accusantium! Magni officiis
-        expedita exercitationem temporibus error iusto minus aut a?
-      </p>
-    </section>
-    <section class="sectionB contenedor">
-      <h3>Trabajos que realizamos</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus libero
-        sequi voluptate quibusdam eveniet voluptatem culpa harum atque
-        necessitatibus sapiente obcaecati impedit non, dolore hic fuga officiis.
-        A, labore aliquid. Culpa natus laudantium quasi doloremque maxime, quia
-        quae quis voluptatibus illum voluptatum cum unde facilis aliquam? Autem
-        beatae, in optio nam delectus, est ipsa suscipit assumenda libero ipsum
-        rerum sed!
-      </p>
-    </section>
 
-    <!--Galeria de imagenes -->
-    <main class="galeria">
-      <div class="imagen">
-        <img
-          class="imagen-galeria img-fluid"
-          src="img/montaje_elect.jpg"
-          alt="Montajes"
-        />
-        <h3>Montajes</h3>
+    <!-- Project content -->
+    <section class="sectionA">
+      <div data-aos="fade-down">
+        <h3>Nuestros servicios</h3>
       </div>
-      <div class="imagen">
-        <img
-          class="imagen-galeria img-fluid"
-          src="img/instalacionElectrica.png"
-          alt="Instalaciones eléctricas"
-        />
-        <h3>Instalaciones eléctricas</h3>
+      <div class="contenedorServicio">
+        <div data-aos="fade-up">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            reprehenderit animi nemo nam porro sunt libero qui quaerat, odit
+            ducimus natus temporibus ut officia nesciunt adipisci ipsum? Non,
+            nemo suscipit?
+          </p>
+        </div>
+        <div data-aos="fade-up"> 
+          <img src="img/Equipos-electricos.jpg" alt="Nuestro Servicio" />
+        </data-aos=>
       </div>
-      <div class="imagen">
-        <img class="imagen-galeria img-fluid" src="img/domotica.jpg" alt="Domótica" />
-        <h3>Domótica</h3>
+    </section>
+    <section class="sectionFondo">
+      <div class="sectionB">
+        <div data-aos="fade-down">
+          <h3>Trabajos que realizamos</h3>
+        </div>
+        <div data-aos="fade-up">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, deserunt error. Suscipit quibusdam, magni ducimus autem ea ad laudantium, quia modi omnis consectetur dolorem recusandae animi illum, fugiat veniam reprehenderit?
+          </p>
+        </div>
+        <div class="trabajos-realizados">
+          <div class="trabajo" data-aos="flip-up">
+            <img class="imgTrabajo" src="img/montaje_elect.jpg" alt="Montaje Eléctrico">
+            <h3 class="tituloTrabajo">Montaje Eléctrico</h3>
+            <p class="trabjDescripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus quis, aspernatur cumque eligendi ut debitis saepe iusto doloremque esse deleniti sint quia dicta fuga! Laudantium possimus quis quibusdam? Delectus, consequatur.</p>
+          </div>
+          <div class="trabajo" data-aos="flip-up">
+            <img class="imgTrabajo" src="img/instalacionElectrica.png" alt="Instalación Eléctrica">
+            <h3 class="tituloTrabajo">Instalación Eléctrica</h3>
+            <p class="trabjDescripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae doloribus qui dolorum a ipsum nobis consequuntur soluta ullam, commodi recusandae accusantium vero dicta sapiente. Iste cum nemo possimus totam?</p>
+          </div>
+          <div class="trabajo" data-aos="flip-up">
+            <img class="imgTrabajo" src="img/domotica.jpg" alt="Domótica">
+            <h3 class="tituloTrabajo">Domótica</h3>
+            <p class="trabjDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque delectus deserunt tenetur unde aliquid ullam harum id suscipit repudiandae distinctio possimus odit nostrum minima reprehenderit quo, dignissimos animi enim vitae!</p>
+          </div>
+          <div class="trabajo" data-aos="flip-up">
+            <img class="imgTrabajo" src="img/cctvSecuritest.png" alt="CCTV">
+            <h3 class="tituloTrabajo">CCTV Securi Test</h3>
+            <p class="trabjDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus exercitationem veniam dolorem eligendi, quasi ipsa distinctio, sint fugit vel sunt officiis recusandae omnis, beatae architecto nostrum fuga voluptas dignissimos.</p>
+          </div>
+          <div class="trabajo" data-aos="flip-up">
+            <img class="imgTrabajo" src="img/controlAcceso.jpg" alt="Control Acceso">
+            <h3 class="tituloTrabajo">Control Acceso</h3>
+            <p class="trabjDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, modi error? Voluptate repellendus adipisci nam tempore distinctio, reiciendis consequuntur quibusdam illo saepe doloribus reprehenderit ipsum esse deleniti. In, ipsum modi.</p>
+          </div>
+          <div class="trabajo" data-aos="flip-up">
+            <img class="imgTrabajo" src="img/sistemAlarm.jpg" alt="Sistema Alarma">
+            <h3 class="tituloTrabajo">Sistema Alarma</h3>
+            <p class="trabjDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias accusantium ab quo possimus impedit odio repellendus animi fugit! Similique laborum unde placeat. Nihil quos corrupti asperiores placeat, eius illo ducimus.</p>
+          </div>
+        </div>
       </div>
-      <div class="imagen">
-        <img class="imagen-galeria img-fluid" src="img/cctvSecuritest.png" alt="CCTV" />
-        <h3>CCTV</h3>
-      </div>
-      <div class="imagen">
-        <img
-          class="imagen-galeria img-fluid"
-          src="img/controlAcceso.jpg"
-          alt="Control Acceso"
-        />
-        <h3>Control Acceso</h3>
-      </div>
-      <div class="imagen">
-        <img
-          class="imagen-galeria img-fluid"
-          src="img/sistemAlarm.jpg"
-          alt="Sistema de alarma"
-        />
-        <h3>Sistema de alarma</h3>
-      </div>
-    </main>
+      </section>
+
     <!--Footer and WSP  -->
     <footer>
       <div>
@@ -168,11 +163,17 @@
     >
       <img class="whats" src="img/wsp.png" alt="wsp" />
     </a>
-    <!-- JavaScript -->
+    <!-- JavaScript Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <!-- Javascript AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- INITIALIZE AOS -->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

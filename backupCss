@@ -1,0 +1,276 @@
+
+/****************Container************/
+@media (min-width: 1024px) {
+  .contIndex {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "hero hero hero"
+      "sectionA sectionA sectionA"
+      "sectionB sectionB sectionB"
+      "main main main"
+      "footer footer footer";
+  }
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 10px;
+  }
+}
+@media (min-width: 760px) {
+  .contIndex {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "hero hero"
+      "sectionA sectionA"
+      "sectionB sectionB"
+      "main main"
+      "footer footer";
+  }
+}
+/* .contNostros{
+ display: grid;
+ grid-template-areas: 
+ "header header header"
+ "sectionA sectionA sectionA"
+ "sectionB sectionB sectionC"
+ "sectionD valores valores"
+ "footer footer footer"
+ ;
+} */
+
+/*NavBar*/
+/**********************************/
+header {
+  grid-area: header;
+  padding: 10px;
+  position: sticky;
+  top: 0px;
+}
+.navbar {
+  justify-content: center;
+  align-items: center;
+}
+/* object{
+  width: 100%;
+
+} */
+
+/* ul{
+    list-style-type: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+li{
+    display: inline-block;
+    padding: 0 20px;
+}
+ */
+.logo {
+  width: 50px;
+  cursor: pointer;
+}
+
+/*Hero page*/
+/**********************************/
+.hero {
+  background-image: url(../img/hero-page.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: hero;
+}
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+/* img {
+  width: 500px;
+} */
+.img-home-1 {
+  text-align: center;
+}
+/* Seccion informativa */
+/**********************************/
+.contenedorServicio{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) ;
+  gap: 10px 10px;
+  align-items: center;
+}
+.sectionA {
+  grid-area: sectionA;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.sectionA h3 {
+  text-align: center;
+}
+.sectionB {
+  grid-area: sectionB;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.sectionB h3 {
+  text-align: center;
+}
+.sectionC {
+  grid-area: sectionC;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.sectionC h3 {
+  text-align: center;
+}
+.sectionD {
+  grid-area: sectionD;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.sectionD h3 {
+  text-align: center;
+}
+/* card fotos */
+/**********************************/
+main {
+  grid-area: main;
+  margin: 10px 100px 40px 100px;
+}
+
+@media (min-width: 501) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 10px;
+  }
+}
+.imagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+.imagen-galeria {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+.galeria .imagen h3 {
+  margin-top: 10px;
+  text-align: center;
+}
+.imagen-nosotros {
+  width: 500px;
+  align-items: center;
+}
+
+.nos-img img {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+/* Contenedor informativo */
+/**********************************/
+.contenedor {
+  width: 80%;
+  height: auto;
+  border-radius: 6px;
+  margin: auto;
+}
+.contenedor .nosotros img {
+  display: block;
+  width: 40%;
+  margin: auto;
+}
+.contenedor .mapa {
+  text-align: center;
+}
+.contenedor .formulario {
+  width: 1000px;
+  height: 100%;
+  border: solid black 3px;
+  margin: auto;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: left;
+  align-items: center;
+}
+.contenedor .producto {
+  width: 100%;
+  height: 100%;
+  border: solid aliceblue 2px;
+  margin: auto;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: start;
+  align-items: center;
+}
+/* Formulario de solicitud*/
+/**********************************/
+form {
+  max-width: 400px;
+  margin: 0;
+  padding: 20px;
+}
+label,
+input,
+textarea,
+select {
+  display: block;
+  margin: 10px 0;
+}
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+/* Pie de Pagina */
+/**********************************/
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*name*/
+  grid-area: footer;
+}
+.redes-sociales a {
+  margin-right: 10px;
+}
+.redes-sociales img {
+  width: 50px;
+}
+/* conmsulta por wsp */
+/**********************************/
+.whats {
+  width: 130px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
