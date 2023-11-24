@@ -1,3 +1,7 @@
+.info{
+    padding: 10%;
+    margin: auto;
+}
 .hero{
     width: 100%;
     height: 100%;
@@ -8,17 +12,21 @@
         background: rgba(0,0,0,0.7);
         padding: 20px;
         border-radius: 10px;
+        text-align: center;
+        margin: auto;
         .title-hero{
             color: var(--color-white);
         }
-        .text-hero{
-            color: var(--color-white);
-        }
-        /*
-        @media screen and(min-height: 375px){
-            .text-hero:hover{
-                display: block;
-            }
-        }*/
+    }   
+}
+.text-hero{
+    display: none;
+    color: var(--color-white);
+    max-width: 500px;
+
+}
+@media screen and (min-width: 400px){
+    .text-hero{
+        display: block;
     }
 }
