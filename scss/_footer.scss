@@ -1,18 +1,9 @@
-footer{
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    .logo{
-        width: 50px;
-        cursor: pointer;
-    }
-    .redes-sociales a {
-        margin-right: 10px;
-      }
-      .redes-sociales img {
-        width: 50px;
-      }
+.redes-sociales {
+  align-items: center;
+}
+.redes-sociales a {
+  margin-right: 10px;
+}
+.redes-sociales img {
+  width: 50px;
 }

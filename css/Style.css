@@ -76,4 +76,23 @@ body {
   border: 2px solid var(--color-form);
 }
 
+.redes-sociales {
+  align-items: center;
+}
+
+.redes-sociales a {
+  margin-right: 10px;
+}
+
+.redes-sociales img {
+  width: 50px;
+}
+
+.whats {
+  width: 130px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
 /*# sourceMappingURL=Style.css.map */
