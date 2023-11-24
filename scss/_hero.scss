@@ -1,16 +1,24 @@
 .hero{
-    height: 500px;
+    width: 100%;
+    height: 100%;
     background-image: url(../img/hero-page.jpg);
     background-position: center;
     background-size: cover;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     .hero-content{
         background: rgba(0,0,0,0.7);
         padding: 20px;
         border-radius: 10px;
+        .title-hero{
+            color: var(--color-white);
+        }
+        .text-hero{
+            color: var(--color-white);
+        }
+        /*
+        @media screen and(min-height: 375px){
+            .text-hero:hover{
+                display: block;
+            }
+        }*/
     }
 }

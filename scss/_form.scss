@@ -1,0 +1,11 @@
+.contact{
+    margin: 2%;
+    .form-control,.form-group:focus{
+        box-shadow: none;
+    }
+    .form-control:focus{
+        box-shadow: none;
+        border: 2px solid var(--color-form);
+    }
+}
+

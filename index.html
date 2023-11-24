@@ -3,175 +3,520 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="css/Style.css" />
-    <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- Bootstrap Style Layout -->
+    <!-- Meta desciption -->
+    <meta
+      name="description"
+      content="Nuestra empresa de apoyo y crecimiento tanto para nmegocios como  "
+    />
+    <!-- Meta  -->
+    <meta name="keywords" content="Electronic, " />
+    <!-- Bootstrap Include via CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <!-- Logo Page -->
-    <link rel="icon" href="img/logo-empresa.png" type="image/x-icon" />
+    <!-- CDN AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <!-- Titulo de la Nuestro sitio Web -->
     <title>GC Domótic</title>
   </head>
-  <body class="contIndex">
-        <!-- Hero Page -->
-        <div class="hero">
-          <div class="hero-content">
-            <h1>GC Domótic LTDA</h1>
-            <p>Bienvenidos a mi sitio Web</p>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand logo-nav" href="#hero">
+          <img src="img/logo-empresa.png" alt="Logo-Empresa" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+            <a class="nav-link" href="#about">Empresa</a>
+            <a class="nav-link" href="#trabajos">Trabajos</a>
+            <a class="nav-link" href="#contact">Contacto</a>
           </div>
         </div>
-    <!-- Nav Bar -->
-    <header>
-      <!-- navbar navbar-expand-lg bg-body-tertiary-->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <a href="index.html">
-          <img class="logo" src="img/logo-empresa.png" alt="GC" />
-        </a>
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">GC Domótic</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="py-5 text-center hero">
+      <div class="container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto hero-content">
+            <h2 class="fw-light title-hero">GC Domótic</h2>
+            <p class="lead text-hero">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
+              in sequi totam ex voluptatum aliquid saepe ratione autem ipsum,
+              maiores delectus? Recusandae optio nostrum fugit esse iure hic
+              illo veritatis!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Datos de la empresa -->
+    <section id="about" class="empresa">
+      <h2 class="fw-light title-empresa">Nuestra Empresa</h2>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 order-1 order-lg-2 aos-init aos-animate"
+            data-aos="zoom-in"
+            data-aos-delay="150"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="nosotros/nosotros.html">Nosotros</a>
+            <img
+              src="img/Equipos-electricos.jpg"
+              class="img-fluid"
+              alt="Herramientas-Seguridad"
+            />
+          </div>
+          <div
+            class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate"
+            data-aos="fade-right"
+          >
+            <h3>Protección y Politicas de cuidados</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul>
+              <li>
+                <i class="bi bi-check-circle"></i> Ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="producto/producto.html">Productos</a>
+              <li>
+                <i class="bi bi-check-circle"></i> Duis aute irure dolor in
+                reprehenderit in voluptate velit.
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto/contacto.html">contacto</a>
+              <li>
+                <i class="bi bi-check-circle"></i> Ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate trideta storacalaperda mastiro dolore
+                eu fugiat nulla pariatur.
               </li>
             </ul>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <!-- Project content -->
-    <section class="sectionA">
-      <div data-aos="fade-down">
-        <h3>Nuestros servicios</h3>
-      </div>
-      <div class="contenedorServicio">
-        <div data-aos="fade-up">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-            reprehenderit animi nemo nam porro sunt libero qui quaerat, odit
-            ducimus natus temporibus ut officia nesciunt adipisci ipsum? Non,
-            nemo suscipit?
-          </p>
-        </div>
-        <div data-aos="fade-up"> 
-          <img src="img/Equipos-electricos.jpg" alt="Nuestro Servicio" />
-        </data-aos=>
       </div>
     </section>
-    <section class="sectionFondo">
-      <div class="sectionB">
-        <div data-aos="fade-down">
-          <h3>Trabajos que realizamos</h3>
+    <!-- Servicios -->
+    <section id="trabajos" class="album py-5 bg-body-tertiary servicios">
+      <h2 class="fw-light title-servicio">Nuestros Servicios</h2>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card card-body">
+              <img
+                src="img/cctvSecuritest.png"
+                class="card-img-top"
+                alt="cctvSecuritest"
+              />
+              <div class="card-body">
+                <h5 class="card-title">cctv Securitest</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <button
+                  type="button"
+                  href="#"
+                  class="btn btn-sm btn-outline-secondary"
+                >
+                  Go somewhere
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-body">
+              <img
+                src="img/instalacionElectrica.png"
+                class="card-img-top"
+                alt="instalacionElectrica"
+              />
+              <div class="card-body">
+                <h5 class="card-title">instalacion Electrica</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <button
+                  type="button"
+                  href="#"
+                  class="btn btn-sm btn-outline-secondary"
+                >
+                  Go somewhere
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-body">
+              <img
+                src="img/controlAcceso.png"
+                class="card-img-top"
+                alt="control-Acceso"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Control Acceso</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <button
+                  type="button"
+                  href="#"
+                  class="btn btn-sm btn-outline-secondary"
+                >
+                  Go somewhere
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-body">
+              <img src="img/domotica.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <button
+                  type="button"
+                  href="#"
+                  class="btn btn-sm btn-outline-secondary"
+                >
+                  Go somewhere
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-body">
+              <img src="img/sistemAlarm.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <button
+                  type="button"
+                  href="#"
+                  class="btn btn-sm btn-outline-secondary"
+                >
+                  Go somewhere
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-body">
+              <img src="img/montaje_elect.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <button
+                  type="button"
+                  href="#"
+                  class="btn btn-sm btn-outline-secondary"
+                >
+                  Go somewhere
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div data-aos="fade-up">
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="contact section-bg">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Contactanos</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, deserunt error. Suscipit quibusdam, magni ducimus autem ea ad laudantium, quia modi omnis consectetur dolorem recusandae animi illum, fugiat veniam reprehenderit?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            labore ipsum magnam veniam! Minima recusandae dolores neque
+            assumenda enim officia cum consequuntur adipisci natus. Atque
+            ratione ad dolores debitis unde.
           </p>
         </div>
-        <div class="trabajos-realizados">
-          <div class="trabajo" data-aos="flip-up">
-            <img class="imgTrabajo" src="img/montaje_elect.jpg" alt="Montaje Eléctrico">
-            <h3 class="tituloTrabajo">Montaje Eléctrico</h3>
-            <p class="trabjDescripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus quis, aspernatur cumque eligendi ut debitis saepe iusto doloremque esse deleniti sint quia dicta fuga! Laudantium possimus quis quibusdam? Delectus, consequatur.</p>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Nuestra dirección</h3>
+              <p>Psje. CasaBlanca, Valparaíso - Chile</p>
+            </div>
           </div>
-          <div class="trabajo" data-aos="flip-up">
-            <img class="imgTrabajo" src="img/instalacionElectrica.png" alt="Instalación Eléctrica">
-            <h3 class="tituloTrabajo">Instalación Eléctrica</h3>
-            <p class="trabjDescripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae doloribus qui dolorum a ipsum nobis consequuntur soluta ullam, commodi recusandae accusantium vero dicta sapiente. Iste cum nemo possimus totam?</p>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email</h3>
+              <p>fel.valencia.s@gmail.com</p>
+            </div>
           </div>
-          <div class="trabajo" data-aos="flip-up">
-            <img class="imgTrabajo" src="img/domotica.jpg" alt="Domótica">
-            <h3 class="tituloTrabajo">Domótica</h3>
-            <p class="trabjDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque delectus deserunt tenetur unde aliquid ullam harum id suscipit repudiandae distinctio possimus odit nostrum minima reprehenderit quo, dignissimos animi enim vitae!</p>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call</h3>
+              <p>+56 9 67203745</p>
+            </div>
           </div>
-          <div class="trabajo" data-aos="flip-up">
-            <img class="imgTrabajo" src="img/cctvSecuritest.png" alt="CCTV">
-            <h3 class="tituloTrabajo">CCTV Securi Test</h3>
-            <p class="trabjDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus exercitationem veniam dolorem eligendi, quasi ipsa distinctio, sint fugit vel sunt officiis recusandae omnis, beatae architecto nostrum fuga voluptas dignissimos.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <iframe
+              class="mb-4 mb-lg-0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.1171924563487!2d-71.60643822308872!3d-33.053381373549264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689e0c27232df81%3A0x4af749e93fa49fe!2sCasablanca%20203%2C%202340413%20Valpara%C3%ADso!5e0!3m2!1sen!2scl!4v1700744813927!5m2!1sen!2scl"
+              frameborder="0"
+              style="border: 0; width: 100%; height: 384px"
+              allowfullscreen=""
+            ></iframe>
           </div>
-          <div class="trabajo" data-aos="flip-up">
-            <img class="imgTrabajo" src="img/controlAcceso.jpg" alt="Control Acceso">
-            <h3 class="tituloTrabajo">Control Acceso</h3>
-            <p class="trabjDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, modi error? Voluptate repellendus adipisci nam tempore distinctio, reiciendis consequuntur quibusdam illo saepe doloribus reprehenderit ipsum esse deleniti. In, ipsum modi.</p>
-          </div>
-          <div class="trabajo" data-aos="flip-up">
-            <img class="imgTrabajo" src="img/sistemAlarm.jpg" alt="Sistema Alarma">
-            <h3 class="tituloTrabajo">Sistema Alarma</h3>
-            <p class="trabjDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias accusantium ab quo possimus impedit odio repellendus animi fugit! Similique laborum unde placeat. Nihil quos corrupti asperiores placeat, eius illo ducimus.</p>
+
+          <div class="col-lg-6 form-group">
+            <form
+              action="forms/contact.php"
+              method="post"
+              role="form"
+              class="php-email-form"
+            >
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    placeholder="Tu nombre"
+                    required=""
+                  />
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    placeholder="Tu Correo"
+                    required=""
+                  />
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  id="subject"
+                  placeholder="Asunto"
+                  required=""
+                />
+              </div>
+              <div class="form-group mt-3">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="5"
+                  placeholder="Mensaje"
+                  required=""
+                ></textarea>
+              </div>
+
+              <div class="my-3 text-center">
+                <button
+                  type="submit"
+                  href="#"
+                  class="btn btn-sm btn-outline-secondary"
+                >
+                  Enviar
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-      </section>
-
-    <!--Footer and WSP  -->
-    <footer>
-      <div>
-        <a href="index.html">
-          <img class="logo" src="img/logo-empresa.png" alt="GC" />
-        </a>
-      </div>
-      <div>
-        <p>© 2023 GC Domótic, todos los derechos reservados.</p>
-      </div>
-      <div class="redes-sociales">
-        <a href="https://www.facebook.com/felipe.v.sanchez" target="_blank"
-          ><img src="img/facebook.png" alt="Facebook"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/felipevalenciasanchez/"
-          target="_blank"
-          ><img src="img/linkedin.png" alt="Linkedin"
-        /></a>
-        <a href="https://twitter.com/fel_valencia" target="_blank"
-          ><img src="img/gorjeo.png" alt="twitter"
-        /></a>
-        <a href="https://www.instagram.com/r3id3n/" target="_blank"
-          ><img src="img/instagram.png" alt="instagram"
-        /></a>
-        <a href="https://github.com/r3id3n" target="_blank"
-          ><img src="img/github.png" alt="github"
-        /></a>
+    </section>
+    <!-- Footer -->
+    <footer class="py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="d-block mb-2"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <title>Product</title>
+              <circle cx="12" cy="12" r="10"></circle>
+              <path
+                d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"
+              ></path>
+            </svg>
+            <small class="d-block mb-3 text-body-secondary">© 2017–2023</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li>
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Cool stuff</a
+                >
+              </li>
+              <li>
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Random feature</a
+                >
+              </li>
+              <li>
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Team feature</a
+                >
+              </li>
+              <li>
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Stuff for developers</a
+                >
+              </li>
+              <li>
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Another one</a
+                >
+              </li>
+              <li>
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Last time</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li>
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Resource name</a
+                >
+              </li>
+              <li>
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Resource</a
+                >
+              </li>
+              <li>
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Another resource</a
+                >
+              </li>
+              <li>
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Final resource</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li>
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Business</a
+                >
+              </li>
+              <li>
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Education</a
+                >
+              </li>
+              <li>
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Government</a
+                >
+              </li>
+              <li>
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Gaming</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li>
+                <a class="link-secondary text-decoration-none" href="#">Team</a>
+              </li>
+              <li>
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Locations</a
+                >
+              </li>
+              <li>
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Privacy</a
+                >
+              </li>
+              <li>
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Terms</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
-    <a
-      href="https://api.whatsapp.com/send?phone=56967203745&text=Hola,%20Necesito%20Cotizar%20un%20Proyecto"
-      target="_blank"
-    >
-      <img class="whats" src="img/wsp.png" alt="wsp" />
-    </a>
-    <!-- JavaScript Bootstrap -->
+
+    <!-- Bootstrap Script Javascript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <!-- Javascript AOS -->
+    <!-- AOS Script Javascript -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- INITIALIZE AOS -->
+    <!-- Initialize AOS -->
     <script>
       AOS.init();
     </script>

@@ -1,200 +1,79 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-.sectionFondo {
-  background-color: bisque;
-  padding: 10px 20px 10px 20px;
-  /*
-  @media screen and (min-width: 760px) {
-    .trabajos-realizados {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  */
-}
-.sectionFondo .sectionB {
-  width: 80%;
-  height: auto;
-  border-radius: 6px;
-  margin: auto;
-  padding: 40px 0 20px 0;
-}
-.sectionFondo .sectionB h3 {
-  text-align: center;
-  padding-bottom: 4%;
-}
-@media screen and (min-width: 0px) {
-  .sectionFondo .sectionB .trabajos-realizados {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px 10px;
-  }
-  .sectionFondo .sectionB .trabajos-realizados .trabajo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: gray;
-    border-radius: 5px;
-    color: #fff;
-    box-shadow: 5px 10px 10px -6px black;
-  }
-  .sectionFondo .sectionB .trabajos-realizados .trabajo .imgTrabajo {
-    width: 100%;
-    height: 200px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    object-fit: cover;
-  }
-  .sectionFondo .sectionB .trabajos-realizados .trabajo .imgTrabajo .tituloTrabajo {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .sectionFondo .sectionB .trabajos-realizados .trabajo .imgTrabajo .tituloTrabajo .trabjDescripcion {
-    font-size: 0px;
-  }
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;500&display=swap");
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-header {
-  position: sticky;
-  top: 0px;
-  grid-area: header;
+:root {
+  --color-white:#fff;
+  --color-form: #00627f;
 }
-header .navbar {
-  justify-content: center;
-  align-items: center;
-}
-header .navbar .logo {
-  width: 50px;
-  cursor: pointer;
-}
-header .navbar .navbar-brand {
-  font-size: 30px;
-}
-header .navbar .nav-link {
-  font-size: 20px;
+
+.logo-nav img {
+  height: 30px;
+  object-fit: cover;
 }
 
 .hero {
-  height: 500px;
+  width: 100%;
+  height: 100%;
   background-image: url(../img/hero-page.jpg);
   background-position: center;
   background-size: cover;
-  color: #fff;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .hero .hero-content {
   background: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 10px;
-}
-
-.sectionA {
-  width: 80%;
-  height: auto;
-  border-radius: 6px;
-  margin: auto;
-  padding: 40px 0 20px 0;
-}
-.sectionA h3 {
-  text-align: center;
-  padding-bottom: 4%;
-}
-.sectionA .contenedorServicio {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-}
-.sectionA .contenedorServicio img {
-  width: 500px;
-  object-fit: cover;
-  box-shadow: 5px 5px 10px -6px black;
-}
-
-.sectionFondo {
-  background-color: bisque;
-  padding: 10px 20px 10px 20px;
   /*
-  @media screen and (min-width: 760px) {
-    .trabajos-realizados {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  */
+  @media screen and(min-height: 375px){
+      .text-hero:hover{
+          display: block;
+      }
+  }*/
 }
-.sectionFondo .sectionB {
-  width: 80%;
-  height: auto;
-  border-radius: 6px;
-  margin: auto;
-  padding: 40px 0 20px 0;
+.hero .hero-content .title-hero {
+  color: var(--color-white);
 }
-.sectionFondo .sectionB h3 {
+.hero .hero-content .text-hero {
+  color: var(--color-white);
+}
+
+.empresa {
+  margin: 2%;
+}
+.empresa .title-empresa {
   text-align: center;
-  padding-bottom: 4%;
-}
-@media screen and (min-width: 1000px) {
-  .sectionFondo .sectionB .trabajos-realizados {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px 10px;
-  }
-  .sectionFondo .sectionB .trabajos-realizados .trabajo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: gray;
-    border-radius: 5px;
-    color: #fff;
-    box-shadow: 5px 10px 10px -6px black;
-  }
-  .sectionFondo .sectionB .trabajos-realizados .trabajo .imgTrabajo {
-    width: 100%;
-    height: 200px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    object-fit: cover;
-  }
-  .sectionFondo .sectionB .trabajos-realizados .trabajo .imgTrabajo .tituloTrabajo {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-  }
+  margin-bottom: 5%;
 }
 
-.whats {
-  width: 130px;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+.servicios .title-servicio {
+  text-align: center;
+  margin-bottom: 2%;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.card {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
 }
-footer .logo {
-  width: 50px;
-  cursor: pointer;
+.card img {
+  object-fit: contain;
 }
-footer .redes-sociales a {
-  margin-right: 10px;
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
 }
-footer .redes-sociales img {
-  width: 50px;
+
+.contact {
+  margin: 2%;
+}
+.contact .form-control, .contact .form-group:focus {
+  box-shadow: none;
+}
+.contact .form-control:focus {
+  box-shadow: none;
+  border: 2px solid var(--color-form);
 }
 
 /*# sourceMappingURL=Style.css.map */
