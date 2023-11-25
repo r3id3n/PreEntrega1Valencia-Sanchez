@@ -42,7 +42,7 @@ body {
   max-width: 500px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 413px) {
   .text-hero {
     display: block;
   }
@@ -74,13 +74,13 @@ body {
   transform: translateY(-3%);
 }
 
-.contact {
+.contact, .form-cctv {
   margin: 2%;
 }
-.contact .form-control, .contact .form-group:focus {
+.contact .form-control, .contact .form-group:focus, .form-cctv .form-control, .form-cctv .form-group:focus {
   box-shadow: none;
 }
-.contact .form-control:focus {
+.contact .form-control:focus, .form-cctv .form-control:focus {
   box-shadow: none;
   border: 2px solid var(--color-form);
 }
