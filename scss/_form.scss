@@ -1,11 +1,15 @@
 .contact, .form-cctv{
-    margin: 2%;
+    margin: 2% 2%;
     .form-control,.form-group:focus{
         box-shadow: none;
     }
     .form-control:focus{
         box-shadow: none;
         border: 2px solid var(--color-form);
+    }
+    h2{
+        text-align: center;
+        margin: 2%;
     }
 }
 

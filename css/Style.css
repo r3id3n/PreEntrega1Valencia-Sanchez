@@ -74,8 +74,16 @@ body {
   transform: translateY(-3%);
 }
 
+.servicio-cctv {
+  padding-top: 5%;
+}
+.servicio-cctv .title-empresa {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
 .contact, .form-cctv {
-  margin: 2%;
+  margin: 2% 2%;
 }
 .contact .form-control, .contact .form-group:focus, .form-cctv .form-control, .form-cctv .form-group:focus {
   box-shadow: none;
@@ -83,6 +91,10 @@ body {
 .contact .form-control:focus, .form-cctv .form-control:focus {
   box-shadow: none;
   border: 2px solid var(--color-form);
+}
+.contact h2, .form-cctv h2 {
+  text-align: center;
+  margin: 2%;
 }
 
 .redes-sociales {
