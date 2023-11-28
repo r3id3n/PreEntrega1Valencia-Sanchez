@@ -59,6 +59,11 @@ body a:link, body a:visited, body a:active {
   margin-bottom: 5%;
 }
 
+.nosotros {
+  margin: 10px;
+  padding: 2%;
+}
+
 .servicios .title-servicio {
   text-align: center;
   margin-bottom: 2%;
