@@ -1,134 +1,205 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/Style.css" />
-    <link rel="icon" href="../img/logo-empresa.png" type="image/x-icon" />
-    <title>Control Acceso</title>
-  </head>
-  <body>
-    <!-- Nav Bar -->
-    <header>
-      <a href="../index.html">
-        <img class="logo" src="../img/logo-empresa.png" alt="GC" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Meta desciption -->
+  <meta name="description" content="Nuestra empresa de apoyo y crecimiento tanto para nmegocios como  " />
+  <!-- Meta  -->
+  <meta name="keywords" content="Electronic, Control de acceso, biometrico, dactilar " />
+  <!-- Icon -->
+    <link rel="icon" href="../img/logo-empresa.png" type="image/x-icon">
+  <!-- Bootstrap Include via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- CDN AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.c ss" rel="stylesheet" />
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="../css/Style.css" />
+  <!-- Titulo de la Nuestro sitio Web -->
+  <title>GC Domótic | Cont. Acceso</title>
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-nav" href="../index.html">
+        <img src="../img/logo-empresa.png" alt="Logo-Empresa" />
       </a>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../nosotros/nosotros.html">Nosotros</a></li>
-          <li><a href="producto.html">Productos</a></li>
-          <li><a href="../contacto/contacto.html">Contactanos</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Project content -->
-    <section class="contenedor">
-      <article>
-        <div>
-          <h2>Control Acceso</h2>
-          <div class="producto">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              quos voluptate cum nam dolorum laborum quod magnam delectus
-              tempore doloribus libero perspiciatis minus ducimus illo aliquam
-              impedit praesentium, totam enim. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Atque sequi assumenda blanditiis
-              doloremque voluptate neque illum quibusdam rerum, excepturi
-              exercitationem reprehenderit, aliquid quae deserunt. Recusandae
-              voluptate at provident voluptates et?
-            </p>
-            <img src="../img/controlAcceso.jpg" alt="Control Acceso" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          <a class="nav-link" href="#servicio">Servicio</a>
+          <a class="nav-link" href="#cotizacion">Cotizacion</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Contenido -->
+  <section id="servicio" class="servicio-gc-domotic">
+    <h2 class="fw-light title-empresa">Contrato y servicios de Control de Accesos</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 order-1 order-lg-2 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="150">
+          <img src="../img/controlAcceso.png" class="img-fluid" alt="Herramientas-Seguridad" />
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right">
+          <h3>Nuestro trabajo consiste en:</h3>
+          <p class="fst-italic">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <ul>
+            <li>
+              <i class="bi bi-check-circle"></i> Ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.
+            </li>
+            <li>
+              <i class="bi bi-check-circle"></i> Duis aute irure dolor in
+              reprehenderit in voluptate velit.
+            </li>
+            <li>
+              <i class="bi bi-check-circle"></i> Ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate trideta storacalaperda mastiro dolore
+              eu fugiat nulla pariatur.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulario -->
+  <section id="cotizacion" class="bg-body-tertiary section-bg">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+      <div class="section-title contact">
+        <h2 class="fw-light">Cotiza con nosotros</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          labore ipsum magnam veniam! Minima recusandae dolores neque
+          assumenda enim officia cum consequuntur adipisci natus. Atque
+          ratione ad dolores debitis unde.
+        </p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="row mb-3 justify-content-center">
+          <div class="col-md-4">
+            <label for="formNombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="formNombre" placeholder="Nombres" />
+          </div>
+          <div class="col-md-4">
+            <label for="formApellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="formApellido" placeholder="Apellidos" />
           </div>
         </div>
-      </article>
-      <article>
-        <h2>Cotización</h2>
-        <div class="formulario">
-          <form action="#" method="post">
-            <!-- Nombre y apellido del contacto -->
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required />
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required />
-            <!-- Numero telefonico -->
-            <label for="telefono">Teléfono:</label>
-            <input
-              type="tel"
-              id="telefono"
-              name="telefono"
-              placeholder="+569"
-              required
-            />
-            <!-- Correo -->
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required />
-            <!-- Tipo de acceso -->
-            <label for="tipoAcceso">Tipo de acceso:</label>
-            <select id="tipoAcceso">
-              <option value="tipoAcceso">Huella Dactilar</option>
-              <option value="tipoAcceso">Credencial</option>
-              <option value="tipoAcceso">Detector facial</option>
-              <option value="tipoAcceso">todas las mencionadas</option>
-            </select>
-            <!-- Region del usuario -->
-            <label for="region">Región:</label>
-            <select id="region">
-              <option value="region1">Región 1</option>
-              <option value="region2">Región 2</option>
-              <option value="region3">Región 3</option>
-            </select>
-            <!-- Comuna del usuario -->
-            <label for="comuna">Comuna:</label>
-            <select id="comuna">
-              <option value="comuna1">Comuna 1</option>
-              <option value="comuna2">Comuna 2</option>
-              <option value="comuna3">Comuna 3</option>
-            </select>
-            <!-- Datos de información -->
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-          </form>
+        <div class="row mb-3 justify-content-center">
+          <div class="col-md-8">
+            <label for="formDireccion" class="form-label">Direccion</label>
+            <input type="text" class="form-control" id="formDireccion" placeholder="Direccion de referencia" />
+          </div>
         </div>
-      </article>
-    </section>
-    <br />
-    <!-- Footer and WSP -->
-    <a
-      href="https://api.whatsapp.com/send?phone=56967203745&text=Hola,%20Necesito%20Cotizar%20un%20Proyecto"
-      target="_blank"
-    >
-      <img class="whats" src="../img/wsp.png" alt="wsp" />
-    </a>
-    <footer>
-      <div>
-        <a href="../index.html">
-          <img class="logo" src="../img/logo-empresa.png" alt="GC" />
-        </a>
+        <div class="row mb-3 justify-content-center">
+          <div class="col-md-4">
+            <label for="formRegion" class="form-label">Región</label>
+            <select class="form-select" name="formRegion" id="formSelectRegion">
+              <option value="">Arica y Parinacota</option>
+              <option value="">Tarapacá</option>
+              <option value="">Antofagasta</option>
+              <option value="">Atacama</option>
+              <option value="">Coquimbo</option>
+              <option value="">Valparaíso</option>
+              <option value="">Metropolitana</option>
+              <option value="">O'Higgins</option>
+              <option value="">Maule</option>
+              <option value="">Ñuble</option>
+              <option value="">Biobío</option>
+              <option value="">Los Lagos</option>
+              <option value="">Aysén</option>
+              <option value="">Magallanes</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="formComuna" class="form-label">Comuna</label>
+            <select class="form-select" name="formRegion" id="formComuna">
+              <option value="">Comuna 1</option>
+              <option value="">Comuna 2</option>
+              <option value="">Comuna 3</option>
+              <option value="">Comuna 4</option>
+            </select>
+          </div>
+        </div>
+        <div class="row mb-3 justify-content-center">
+          <div class="col-md-8">
+            <label for="exampleFormControlTextarea1" class="form-label">Detállanos tu idea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="my-3 text-center">
+          <button
+            type="submit"
+            href="#"
+            class="btn btn-sm btn-outline-secondary"
+          >
+            Enviar Solicitud
+          </button>
+        </div>
       </div>
-      <div>
-        <p>© 2023 GC Domótic, todos los derechos reservados.</p>
-      </div>
-      <div class="redes-sociales">
-        <a href="https://www.facebook.com/felipe.v.sanchez" target="_blank"
-          ><img src="../img/facebook.png" alt="Facebook"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/felipevalenciasanchez/"
-          target="_blank"
-          ><img src="../img/linkedin.png" alt="Linkedin"
-        /></a>
-        <a href="https://twitter.com/fel_valencia" target="_blank"
-          ><img src="../img/gorjeo.png" alt="twitter"
-        /></a>
-        <a href="https://www.instagram.com/r3id3n/" target="_blank"
-          ><img src="../img/instagram.png" alt="instagram"
-        /></a>
-        <a href="https://github.com/r3id3n" target="_blank"
-          ><img src="../img/github.png" alt="github"
-        /></a>
-      </div>
-    </footer>
-  </body>
+  </section>
+  <!-- Planes -->
+
+
+  <!-- Footer -->
+  <footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4 redes-sociales">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/felipe.v.sanchez" target="_blank"><img src="../img/facebook.png"
+            alt="Facebook" /></a>
+        <!-- Linkedin -->
+        <a href="https://www.linkedin.com/in/felipevalenciasanchez/" target="_blank"><img src="../img/linkedin.png"
+            alt="Linkedin" /></a>
+        <!-- twitter -->
+        <a href="https://twitter.com/fel_valencia" target="_blank"><img src="../img/gorjeo.png" alt="twitter" /></a>
+
+        <!-- instagram -->
+        <a href="https://www.instagram.com/r3id3n/" target="_blank"><img src="../img/instagram.png"
+            alt="instagram" /></a>
+
+        <!-- github -->
+        <a href="https://github.com/r3id3n" target="_blank"><img src="../img/github.png" alt="github" /></a>
+      </section>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05)">
+      © 2023 Copyright:
+      <a class="text-body" href="../index.html">GC-Domótic</a>
+    </div>
+  </footer>
+
+  <!-- WSP -->
+  <a href="https://api.whatsapp.com/send?phone=56967203745&text=Hola,%20Necesito%20Cotizar%20un%20Proyecto"
+    target="_blank">
+    <img class="whats" src="../img/wsp.png" alt="wsp" />
+  </a>
+  <!-- Bootstrap Script Javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- AOS Script Javascript -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>

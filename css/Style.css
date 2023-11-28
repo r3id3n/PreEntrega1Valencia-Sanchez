@@ -2,6 +2,10 @@
 body {
   font-family: "Inter", sans-serif;
 }
+body a:link, body a:visited, body a:active {
+  text-decoration: none;
+  color: black;
+}
 
 :root {
   --color-white:#fff;
@@ -74,10 +78,10 @@ body {
   transform: translateY(-3%);
 }
 
-.servicio-cctv {
+.servicio-gc-domotic {
   padding-top: 5%;
 }
-.servicio-cctv .title-empresa {
+.servicio-gc-domotic .title-empresa {
   text-align: center;
   margin-bottom: 2%;
 }
