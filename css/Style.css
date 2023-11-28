@@ -85,6 +85,7 @@ body a:link, body a:visited, body a:active {
 
 .servicio-gc-domotic {
   padding-top: 5%;
+  padding-bottom: 2%;
 }
 .servicio-gc-domotic .title-empresa {
   text-align: center;
@@ -92,7 +93,7 @@ body a:link, body a:visited, body a:active {
 }
 
 .contact, .form-cctv {
-  margin: 2% 2%;
+  padding: 2% 2%;
 }
 .contact .form-control, .contact .form-group:focus, .form-cctv .form-control, .form-cctv .form-group:focus {
   box-shadow: none;
