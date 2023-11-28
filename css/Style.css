@@ -2,14 +2,15 @@
 body {
   font-family: "Inter", sans-serif;
 }
-body a:link, body a:visited, body a:active {
-  text-decoration: none;
-  color: black;
-}
 
 :root {
   --color-white:#fff;
   --color-form: #00627f;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: black;
 }
 
 .logo-nav img {
